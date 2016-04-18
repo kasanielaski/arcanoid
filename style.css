@@ -1,0 +1,17 @@
+#field{
+	height: 480px;
+	border: 2px solid gray;
+	position: relative;
+}
+#board{
+	background-color: #fcc;
+	height: 30px;
+	position: absolute;
+	bottom: 0px;
+}
+#ball{
+	position: absolute;
+	background-image: url(ball.png);
+	height: 50px;
+	width: 50px;
+}
