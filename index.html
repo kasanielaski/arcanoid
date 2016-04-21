@@ -8,11 +8,12 @@
 </head>
 <body>
 	<div id='game'>
-		<div id='field' :style="{width:fieldWidth.toString()+'px'}" @mousemove='onMove'>
-			<div id='ball'>
+		<div id='field' :style="{width:fieldWidth.toString()+'px',height:fieldHeight.toString()+'px'}" @click='onClick' @mousemove='onMove'>
+			<div id='ball':style="{left:ballX.toString()+'px',
+			top:ballY.toString()+'px',width:ballSize.toString()+'px',height:ballSize.toString()+'px'}">
 
 			</div>
-			<div id='board' :style="{left:boardPosition.toString()+'px',width:boardWidth.toString()+'px'}">
+			<div id='board' :style="{left:boardPosition.toString()+'px',width:boardWidth.toString()+'px',height:boardHeight.toString()+'px'}">
 				
 			</div>
 		</div>
