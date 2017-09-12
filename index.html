@@ -1,22 +1,30 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="utf-8">
-	<script  src ='vue.js' type="text/javascript"></script>
-	<script src ='script.js'type="text/javascript"></script>
+	<script src='vue.js' type="text/javascript"></script>
+	<script src='script.js' type="text/javascript"></script>
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
+
 <body>
 	<div id='game'>
 		<div id='field' :style="{width:fieldWidth.toString()+'px',height:fieldHeight.toString()+'px'}" @click='onClick' @mousemove='onMove'>
-			<div id='ball':style="{left:ballX.toString()+'px',
+			<div id='ball' :style="{left:ballX.toString()+'px',
 			top:ballY.toString()+'px',width:ballSize.toString()+'px',height:ballSize.toString()+'px'}">
 
 			</div>
 			<div id='board' :style="{left:boardPosition.toString()+'px',width:boardWidth.toString()+'px',height:boardHeight.toString()+'px'}">
-				
+
 			</div>
 		</div>
-	</div>	
+		<div id='score'>
+			<h3>
+				Your score: {{ score }}
+			</h3>
+		</div>
+	</div>
 </body>
+
 </html>

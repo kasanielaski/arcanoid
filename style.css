@@ -1,16 +1,16 @@
-#field{
+#field {
 	border: 2px solid gray;
 	position: relative;
 }
-#board{
-	background-color: #fcc;
+#board {
+	background-color: #c3c3c3;
 	position: absolute;
 	bottom: 0px;
 }
-#ball{
+#ball {
 	position: absolute;
 	background-image: url(ball.png);
-	transition-property:left, top;
-	transition-duration:200ms;
-	transition-timing-function:linear;
+	transition-property: left, top;
+	transition-duration: 200ms;
+	transition-timing-function: linear;
 }
